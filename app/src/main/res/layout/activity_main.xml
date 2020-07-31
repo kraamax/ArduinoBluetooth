@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/inputData"
+        android:layout_above="@id/btnDesconectar">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"  />
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnConectar"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+
+
+        android:background="#009688"
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentBottom="true"
+
+        android:drawableRight="@android:drawable/ic_lock_idle_charging"
+        android:text="Conectar"
+        android:textColor="#F8F8F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/datos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+      android:layout_below="@id/txtTime"
+
+        android:text="Datos: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDesconectar"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentBottom="true"
+        android:background="#F44336"
+        android:drawableRight="@android:drawable/ic_lock_idle_charging"
+
+        android:text="Desconectar"
+        android:textColor="#F8F8F3"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/inputData"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Hola"
+        android:textSize="18sp"
+        android:layout_below="@id/datos"
+
+        />
+
+    <Button
+        android:id="@+id/btnGraficar"
+        android:layout_width="122dp"
+        android:layout_height="65dp"
+
+        android:layout_above="@id/scroll"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="57dp"
+        android:background="#009688"
+        android:text="Graficar"
+        android:textColor="#F8F8F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtTime"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Time"/>
+
+    <ImageButton
+        android:id="@+id/imgBtnPlay"
+        android:layout_width="55dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="67dp"
+        android:background="#009688"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/imgBtnPause"
+        android:layout_width="55dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+
+        android:background="#009688"
+        app:srcCompat="@android:drawable/ic_media_pause" />
+
+</RelativeLayout>
