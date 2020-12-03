@@ -39,11 +39,11 @@ public class Graficadora extends AppCompatActivity {
         plot.SetSerie3(time,z,"Z/T",5,true,2);
         plot.SetSizeTituloX(24);
         plot.SetSizeTituloY1(24);
-        plot.SetSizeTextX(11);
-        plot.SetSizeTextY1(11);
-        plot.SetSizeLeyend(11);
-        plot.SetSizeTextY2(11);
-        plot.SetTouch(false);
+        plot.SetSizeTextX(24);
+        plot.SetSizeTextY1(24);
+        plot.SetSizeLeyend(24);
+        plot.SetSizeTextY2(24);
+        plot.SetTouch(true);
         pantalla.addView(plot);
     }
 
